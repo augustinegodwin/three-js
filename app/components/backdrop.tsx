@@ -12,24 +12,26 @@ export default function Backdrop() {
       ref={shadows}
       temporal
       frames={60}
-      alphaTest={0.5}
+      alphaTest={0.3}
       scale={10}
       rotation={[Math.PI /2,0,0]}
+      color="#f2e585"
     >
-      <RandomizedLight 
-        amount={4}
-        radius={9}
-        intensity={0.55}
-        ambient={0.25}
+       <RandomizedLight 
+        amount={12}
+        radius={15}
+        intensity={0.99}
+        ambient={0.2}
         position={[5,5,-10]}
       />
-      <RandomizedLight 
-        amount={4}
+      {/*<RandomizedLight 
+        amount={1}
         radius={5}
         intensity={0.25}
-        ambient={0.55}
+        ambient={0.75}
         position={[-5,5,-9]}
-      />
+        
+      /> */}
     </AccumulativeShadows>
   )
 }

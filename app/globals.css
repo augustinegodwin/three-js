@@ -3,7 +3,7 @@
 @import url("https://rsms.me/inter/inter.css"); */
 @font-face {
   font-family: random-font;
-  src: url(../public/Whipsmart\ Bold.ttf);
+  src: url(../public/bricolage.ttf );
 }
 :root {
   --background: #ffffff;
@@ -59,7 +59,7 @@ html {
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  @apply xl:text-[10rem] sm:text-[6rem] text-[4rem] xl:leading-44 leading-15 sm:leading-28 font-black text-black;
 }
 
 .download-btn {
@@ -67,7 +67,7 @@ html {
 }
 
 .editortabs-container {
-  @apply glassmorphism w-16 border-[2px] rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
+  @apply glassmorphism w-16 border-2 rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
 }
 
 .filtertabs-container {
